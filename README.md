@@ -83,6 +83,8 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 
 ![image](https://github.com/user-attachments/assets/f8b79c17-4215-4499-a61c-950d22e537d9)
 
+![image](https://github.com/user-attachments/assets/b42c1fab-0a98-478f-8ac5-ac5bc4adf2d5)
+
 ---
 
 ### **Part 2: Installing and Configuring Active Directory**  
