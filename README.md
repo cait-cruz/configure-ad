@@ -54,6 +54,14 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 
 ![image](https://github.com/user-attachments/assets/ac0eff28-9e3e-4a88-ab5f-fc4e68bd6957)
 
+![image](https://github.com/user-attachments/assets/7e689263-03de-435e-ab68-85655f36b1d7)
+
+![image](https://github.com/user-attachments/assets/62ae9f2e-7e5c-4332-9ba1-3925888b56ae)
+
+![image](https://github.com/user-attachments/assets/4780a456-f928-4f5e-9a96-bf4653e9acf2)
+
+![image](https://github.com/user-attachments/assets/b93f556b-e8b1-44ee-acc7-08f306848134)
+
 #### **Step 2: Create the Client Machine (Client-1)**  
 1. Deploy a **Windows 10 VM** named **Client-1**:  
    - **Username:** `labuser`  
