@@ -2,55 +2,132 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+# Deploying Active Directory in Azure Virtual Machines  
 
+This tutorial outlines the **implementation of on-premises Active Directory** within **Azure Virtual Machines**. It covers the setup of a Domain Controller, joining a client machine to the domain, configuring remote desktop access, and automating user creation with PowerShell.  
 
-<h2>Video Demonstration</h2>
+---
 
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
+## Environments & Technologies Used  
+- **Microsoft Azure** – Cloud platform for deploying VMs  
+- **Windows Server 2022** – Used as the **Domain Controller (DC-1)**  
+- **Windows 10** – Used as the **Client Machine (Client-1)**  
+- **Active Directory Domain Services (AD DS)** – Manages users, groups, and authentication  
+- **PowerShell** – Automates user creation  
+- **Remote Desktop Protocol (RDP)** – Enables remote access  
 
-<h2>Environments and Technologies Used</h2>
+---
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Active Directory Domain Services
-- PowerShell
+## Operating Systems Used  
+- **Windows Server 2022** (Domain Controller)  
+- **Windows 10** (Client Machine)  
 
-<h2>Operating Systems Used </h2>
+---
 
-- Windows Server 2022
-- Windows 10 (21H2)
+## High-Level Objectives  
+1. **Set up a Domain Controller (DC-1) and a Client Machine (Client-1) in Azure.**  
+2. **Deploy and configure Active Directory Domain Services (AD DS).**  
+3. **Join the client machine to the domain.**  
+4. **Enable Remote Desktop access for domain users.**  
+5. **Automate user creation using PowerShell.**  
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+---
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+## Deployment and Configuration Steps  
 
-<h2>Deployment and Configuration Steps</h2>
+### **Part 1: Setting Up the Virtual Machines in Azure**  
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+#### **Step 1: Create the Domain Controller (DC-1)**  
+1. Create a **Resource Group** in Azure.  
+2. Create a **Virtual Network** and **Subnet**.  
+3. Deploy a **Windows Server 2022 VM** named **DC-1**:  
+   - **Username:** `labuser`  
+   - **Password:** `Cyberlab123!`  
+4. After the VM is created, set **DC-1’s NIC Private IP address** to **static**.  
+5. Log into **DC-1** and disable the **Windows Firewall** *(for testing connectivity)*.  
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+#### **Step 2: Create the Client Machine (Client-1)**  
+1. Deploy a **Windows 10 VM** named **Client-1**:  
+   - **Username:** `labuser`  
+   - **Password:** `Cyberlab123!`  
+2. Attach **Client-1** to the same **Virtual Network** as **DC-1**.  
+3. Set **Client-1’s DNS settings** to **DC-1’s Private IP Address**.  
+4. Restart **Client-1** from the Azure Portal.  
+5. Log into **Client-1** and verify connectivity:  
+   - Open **Command Prompt** and run:  
+     ```powershell
+     ping <DC-1 Private IP>
+     ```  
+   - Ensure the ping succeeds.  
+   - Run `ipconfig /all` in PowerShell to confirm **DC-1’s Private IP is set as the DNS server**.  
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+---
+
+### **Part 2: Installing and Configuring Active Directory**  
+
+#### **Step 1: Install Active Directory on DC-1**  
+1. Log into **DC-1** and install **Active Directory Domain Services (AD DS)**.  
+2. Promote **DC-1** as a **Domain Controller**, creating a new **forest**:  
+   - **Domain Name:** `mydomain.com` *(or any domain name of your choice)*  
+3. Restart **DC-1** and log in as:  
+mydomain.com\labuser
+
+markdown
+Copy
+Edit
+
+#### **Step 2: Create Administrative Users in Active Directory**  
+1. Open **Active Directory Users and Computers (ADUC)**.  
+2. Create an **Organizational Unit (OU)** named **`_EMPLOYEES`**.  
+3. Create another **OU** named **`_ADMINS`**.  
+4. Create a **new domain user**:  
+- **Name:** Jane Doe  
+- **Username:** `jane_admin`  
+- **Password:** `Cyberlab123!`  
+5. Add `jane_admin` to the **Domain Admins** Security Group.  
+6. Log out of **DC-1** and log back in as **jane_admin**:  
+mydomain.com\jane_admin
+
+pgsql
+Copy
+Edit
+7. Use `jane_admin` as the **admin account** for all further steps.  
+
+#### **Step 3: Join Client-1 to the Domain**  
+1. Ensure **Client-1’s DNS settings** point to **DC-1’s Private IP**.  
+2. Restart **Client-1**.  
+3. Log into **Client-1** as the local admin (`labuser`).  
+4. Join **Client-1** to the **domain (`mydomain.com`)**.  
+5. Restart **Client-1**.  
+6. Verify **Client-1 appears in ADUC** on **DC-1**.  
+7. Create an **OU** named **`_CLIENTS`** and move **Client-1** into it.  
+
+---
+
+### **Part 3: Configuring Remote Desktop & Automating User Creation**  
+
+#### **Step 1: Enable Remote Desktop for Domain Users**  
+1. Log into **Client-1** as **jane_admin**.  
+2. Open **System Properties** and select **Remote Desktop**.  
+3. Allow **domain users** to access **Remote Desktop**.  
+4. Test logging into **Client-1** with a non-administrative domain user.  
+
+#### **Step 2: Automate Bulk User Creation with PowerShell**  
+1. Log into **DC-1** as **jane_admin**.  
+2. Open **PowerShell_ise** as Administrator.  
+3. Create a new script file and paste the contents of this [**script**](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1).  
+4. Run the script and observe **user accounts being generated**.  
+5. Open **ADUC** and verify users appear in `_EMPLOYEES`.  
+6. Test logging into **Client-1** using one of the newly created accounts.  
+
+---
+
+## **Finishing Up & Best Practices**  
+- **Do NOT delete the VMs in Azure**; they will be used for future labs.  
+- **To save costs**, turn off the VMs in the **Azure Portal** when not in use.  
+- **Explore Group Policy (GPO)** for automating system-wide settings.  
+- **Practice this lab multiple times** to build familiarity with Active Directory.  
+
+---
+
+### 🎉 **Congratulations! You’ve successfully deployed Active Directory in Azure!** 🎉
