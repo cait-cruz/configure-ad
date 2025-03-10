@@ -46,6 +46,14 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 4. After the VM is created, set **DC-1’s NIC Private IP address** to **static**.  
 5. Log into **DC-1** and disable the **Windows Firewall** *(for testing connectivity)*.  
 
+![image](https://github.com/user-attachments/assets/722501dd-da94-4592-9276-36dd6ba5c63c)
+
+![image](https://github.com/user-attachments/assets/4537d845-352c-474b-8452-f77cad78e4e2)
+
+![image](https://github.com/user-attachments/assets/77d00803-c40b-4ea5-ac29-842284208812)
+
+![image](https://github.com/user-attachments/assets/ac0eff28-9e3e-4a88-ab5f-fc4e68bd6957)
+
 #### **Step 2: Create the Client Machine (Client-1)**  
 1. Deploy a **Windows 10 VM** named **Client-1**:  
    - **Username:** `labuser`  
