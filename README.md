@@ -25,11 +25,11 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 ---
 
 ## High-Level Objectives  
-1. **Set up a Domain Controller (DC-1) and a Client Machine (Client-1) in Azure.**  
-2. **Deploy and configure Active Directory Domain Services (AD DS).**  
-3. **Join the client machine to the domain.**  
-4. **Enable Remote Desktop access for domain users.**  
-5. **Automate user creation using PowerShell.**  
+1. Set up a Domain Controller (DC-1) and a Client Machine (Client-1) in Azure.  
+2. Deploy and configure Active Directory Domain Services (AD DS).  
+3. Join the client machine to the domain.  
+4. Enable Remote Desktop access for domain users.  
+5. Automate user creation using PowerShell.  
 
 ---
 
