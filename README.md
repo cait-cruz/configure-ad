@@ -46,7 +46,7 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 4. After the VM is created, set **DC-1’s NIC Private IP address** to **static**.  
 5. Log into **DC-1** and disable the **Windows Firewall** *(for testing connectivity)*.  
 
-![image](https://github.com/user-attachments/assets/722501dd-da94-4592-9276-36dd6ba5c63c)
+![image](https://github.com/user-attachments/assets/ad505344-0015-4e82-ab9e-f68526535c99)
 
 ![image](https://github.com/user-attachments/assets/4537d845-352c-474b-8452-f77cad78e4e2)
 
