@@ -98,6 +98,14 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 3. Restart **DC-1** and log in as:  
 mydomain.com\labuser
 
+![image](https://github.com/user-attachments/assets/63dcd7e6-dabc-4bd9-b82a-7a2338af0f1f)
+
+![image](https://github.com/user-attachments/assets/e7713178-37e3-4549-8d7e-826eef52a300)
+
+![image](https://github.com/user-attachments/assets/14165992-797a-4b24-b4ac-791cd873ace7)
+
+![image](https://github.com/user-attachments/assets/2594575d-c9a2-4734-9eb3-06901dbbc35a)
+
 #### **Step 2: Create Administrative Users in Active Directory**  
 1. Open **Active Directory Users and Computers (ADUC)**.  
 2. Create an **Organizational Unit (OU)** named **`_EMPLOYEES`**.  
