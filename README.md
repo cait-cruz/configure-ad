@@ -77,13 +77,13 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
    - Ensure the ping succeeds.  
    - Run `ipconfig /all` in PowerShell to confirm **DC-1’s Private IP is set as the DNS server**.  
 
-![image](https://github.com/user-attachments/assets/43669683-be49-4306-a45a-cb1746b9dde0)
+![image](https://github.com/user-attachments/assets/20e7fe41-1dba-46dc-a887-b501cce855c8)
 
 ![image](https://github.com/user-attachments/assets/2009d40c-57de-446d-b477-45363ac5531f)
 
 ![image](https://github.com/user-attachments/assets/f8b79c17-4215-4499-a61c-950d22e537d9)
 
-![image](https://github.com/user-attachments/assets/b42c1fab-0a98-478f-8ac5-ac5bc4adf2d5)
+![image](https://github.com/user-attachments/assets/edf35b78-c13e-4f61-ba52-7966d33d3748)
 
 ![image](https://github.com/user-attachments/assets/bf9c88fd-9011-4e70-9cfd-c2d600ef144d)
 
