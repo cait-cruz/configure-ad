@@ -107,7 +107,7 @@ mydomain.com\labuser
 ![image](https://github.com/user-attachments/assets/2594575d-c9a2-4734-9eb3-06901dbbc35a)
 
 #### **Step 2: Create Administrative Users in Active Directory**  
-1. Open **Active Directory Users and Computers (ADUC)**.  
+1. Open **Active Directory Users and Computers (ADUC)**. 
 2. Create an **Organizational Unit (OU)** named **`_EMPLOYEES`**.  
 3. Create another **OU** named **`_ADMINS`**.  
 4. Create a **new domain user**:  
@@ -118,6 +118,27 @@ mydomain.com\labuser
 6. Log out of **DC-1** and log back in as **jane_admin**:  
 mydomain.com\jane_admin
 7. Use `jane_admin` as the **admin account** for all further steps.  
+
+![image](https://github.com/user-attachments/assets/8705a23d-b42f-4567-8f80-8036a1e6d219)
+
+![image](https://github.com/user-attachments/assets/4e9134cb-cca3-423e-9564-54434b159c3d)
+
+![image](https://github.com/user-attachments/assets/3fd936d0-e425-4f2b-a8f5-d5fdfd78cd30)
+
+![image](https://github.com/user-attachments/assets/8f8b7490-a192-4c59-8258-dc622df0b45b)
+
+![image](https://github.com/user-attachments/assets/1d3d4740-724c-4871-9977-5157710fc8df)
+
+![image](https://github.com/user-attachments/assets/2fe69c4c-9bc6-4936-923f-9ce0c452f63b)
+
+![image](https://github.com/user-attachments/assets/f2988965-17e3-4095-b44a-9186051efd74)
+
+![image](https://github.com/user-attachments/assets/737b4c24-72f6-453b-856a-965293f52f25)
+
+![image](https://github.com/user-attachments/assets/36bb0fd5-0f0b-421c-a12d-a2b4d113568a)
+
+![image](https://github.com/user-attachments/assets/dfc64d22-7ed7-42e0-af53-8b652e76fb89)
+
 
 #### **Step 3: Join Client-1 to the Domain**  
 1. Ensure **Client-1’s DNS settings** point to **DC-1’s Private IP**.  
