@@ -72,10 +72,6 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 3. Restart **DC-1** and log in as:  
 mydomain.com\labuser
 
-markdown
-Copy
-Edit
-
 #### **Step 2: Create Administrative Users in Active Directory**  
 1. Open **Active Directory Users and Computers (ADUC)**.  
 2. Create an **Organizational Unit (OU)** named **`_EMPLOYEES`**.  
@@ -87,10 +83,6 @@ Edit
 5. Add `jane_admin` to the **Domain Admins** Security Group.  
 6. Log out of **DC-1** and log back in as **jane_admin**:  
 mydomain.com\jane_admin
-
-pgsql
-Copy
-Edit
 7. Use `jane_admin` as the **admin account** for all further steps.  
 
 #### **Step 3: Join Client-1 to the Domain**  
