@@ -157,6 +157,10 @@ mydomain.com\jane_admin
 
 ![image](https://github.com/user-attachments/assets/8c0b8bc1-c5d6-4776-ba7f-a5fcdbb1bb4d)
 
+![image](https://github.com/user-attachments/assets/29cffa5a-b7e0-42b4-9697-df59d3791920)
+
+![image](https://github.com/user-attachments/assets/488a4a71-be0d-4072-a36b-317fab9eeb91)
+
 ---
 
 ### **Part 3: Configuring Remote Desktop & Automating User Creation**  
