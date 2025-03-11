@@ -187,6 +187,16 @@ mydomain.com\jane_admin
 5. Open **ADUC** and verify users appear in `_EMPLOYEES`.  
 6. Test logging into **Client-1** using one of the newly created accounts.  
 
+![image](https://github.com/user-attachments/assets/7aba63fd-747f-4d2d-9cdc-7e886c72d811)
+
+![image](https://github.com/user-attachments/assets/f02fdf18-a47b-42cf-993c-2153684e7de1)
+
+![image](https://github.com/user-attachments/assets/9e616044-6a7e-4be5-906e-4e4df5d85b3f)
+
+![image](https://github.com/user-attachments/assets/d50e6eed-ee2e-416f-830d-fb7836491d17)
+
+![image](https://github.com/user-attachments/assets/11005aa2-5a8d-47a6-aaf2-0098c294ff30)
+
 ---
 
 ## **Finishing Up & Best Practices**  
