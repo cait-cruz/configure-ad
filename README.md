@@ -149,6 +149,14 @@ mydomain.com\jane_admin
 6. Verify **Client-1 appears in ADUC** on **DC-1**.  
 7. Create an **OU** named **`_CLIENTS`** and move **Client-1** into it.  
 
+![image](https://github.com/user-attachments/assets/844764b4-cf0a-41e3-8dc2-1a5f5a958480)
+
+![image](https://github.com/user-attachments/assets/4c59d815-95ce-4123-8248-a10480b5c747)
+
+![image](https://github.com/user-attachments/assets/a65a9163-34e9-4b73-8ed3-621b1152e95b)
+
+![image](https://github.com/user-attachments/assets/8c0b8bc1-c5d6-4776-ba7f-a5fcdbb1bb4d)
+
 ---
 
 ### **Part 3: Configuring Remote Desktop & Automating User Creation**  
