@@ -161,6 +161,8 @@ mydomain.com\jane_admin
 
 ![image](https://github.com/user-attachments/assets/488a4a71-be0d-4072-a36b-317fab9eeb91)
 
+![image](https://github.com/user-attachments/assets/61a8307a-7ce9-4225-808c-ca104130fe45)
+
 ---
 
 ### **Part 3: Configuring Remote Desktop & Automating User Creation**  
@@ -170,6 +172,12 @@ mydomain.com\jane_admin
 2. Open **System Properties** and select **Remote Desktop**.  
 3. Allow **domain users** to access **Remote Desktop**.  
 4. Test logging into **Client-1** with a non-administrative domain user.  
+
+![image](https://github.com/user-attachments/assets/510d6447-d460-41c5-9380-ca18018c067d)
+
+![image](https://github.com/user-attachments/assets/246e7d0d-ec64-442b-87f5-c6c9ef452059)
+
+![image](https://github.com/user-attachments/assets/6c1d7101-c40d-4285-9bf1-3357d0e84c2a)
 
 #### **Step 2: Automate Bulk User Creation with PowerShell**  
 1. Log into **DC-1** as **jane_admin**.  
