@@ -58,6 +58,12 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 
 ![image](https://github.com/user-attachments/assets/4ce8c5b5-1662-447d-b015-5809e37ddb81)
 
+![image](https://github.com/user-attachments/assets/6d60f02c-5cb3-4a00-8922-cb94bf75df17)
+
+![image](https://github.com/user-attachments/assets/5d481ecb-468a-4da0-aff7-847a3acf46e7)
+
+![image](https://github.com/user-attachments/assets/f820d694-f49e-4915-8f95-bac0d06b6c09)
+
 
 #### **Step 2: Create the Client Machine (Client-1)**  
 1. Deploy a **Windows 10 VM** named **Client-1**:  
@@ -73,6 +79,16 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
      ```  
    - Ensure the ping succeeds.  
    - Run `ipconfig /all` in PowerShell to confirm **DC-1’s Private IP is set as the DNS server**.  
+
+![image](https://github.com/user-attachments/assets/fa19312e-add4-457e-af38-17f62710ce27)
+
+![image](https://github.com/user-attachments/assets/ea8638e5-dfdb-4714-beec-6a7ccaf956ce)
+
+![image](https://github.com/user-attachments/assets/04141940-6302-4723-8588-f426ab38b6bf)
+
+![image](https://github.com/user-attachments/assets/78a8413d-b363-4f91-9fdd-7192100359e8)
+
+
 
 
 
