@@ -46,21 +46,14 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 4. After the VM is created, set **DC-1’s NIC Private IP address** to **static**.  
 5. Log into **DC-1** and disable the **Windows Firewall** *(for testing connectivity)*.  
 
-![image](https://github.com/user-attachments/assets/ad505344-0015-4e82-ab9e-f68526535c99)
+![image](https://github.com/user-attachments/assets/93cc2566-a5b9-416b-9a76-4ee392d204d9)
 
-![image](https://github.com/user-attachments/assets/ca2d97eb-e14c-4525-b166-276330ddb32d)
+![image](https://github.com/user-attachments/assets/eb567bee-5910-4a77-a501-d6a09aa2f425)
 
-![image](https://github.com/user-attachments/assets/77d00803-c40b-4ea5-ac29-842284208812)
+![image](https://github.com/user-attachments/assets/0f3197d0-2f88-49f1-9ba8-f5ba989fb8a5)
 
-![image](https://github.com/user-attachments/assets/ac0eff28-9e3e-4a88-ab5f-fc4e68bd6957)
+![image](https://github.com/user-attachments/assets/d1a513cf-2986-4071-9a04-32c16e52285f)
 
-![image](https://github.com/user-attachments/assets/5557c447-f29f-4dfa-9361-ddb7956e1c83)
-
-![image](https://github.com/user-attachments/assets/62ae9f2e-7e5c-4332-9ba1-3925888b56ae)
-
-![image](https://github.com/user-attachments/assets/4780a456-f928-4f5e-9a96-bf4653e9acf2)
-
-![image](https://github.com/user-attachments/assets/b93f556b-e8b1-44ee-acc7-08f306848134)
 
 #### **Step 2: Create the Client Machine (Client-1)**  
 1. Deploy a **Windows 10 VM** named **Client-1**:  
@@ -77,15 +70,7 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
    - Ensure the ping succeeds.  
    - Run `ipconfig /all` in PowerShell to confirm **DC-1’s Private IP is set as the DNS server**.  
 
-![image](https://github.com/user-attachments/assets/20e7fe41-1dba-46dc-a887-b501cce855c8)
 
-![image](https://github.com/user-attachments/assets/2009d40c-57de-446d-b477-45363ac5531f)
-
-![image](https://github.com/user-attachments/assets/f8b79c17-4215-4499-a61c-950d22e537d9)
-
-![image](https://github.com/user-attachments/assets/edf35b78-c13e-4f61-ba52-7966d33d3748)
-
-![image](https://github.com/user-attachments/assets/bf9c88fd-9011-4e70-9cfd-c2d600ef144d)
 
 ---
 
@@ -98,13 +83,7 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 3. Restart **DC-1** and log in as:  
 mydomain.com\labuser
 
-![image](https://github.com/user-attachments/assets/63dcd7e6-dabc-4bd9-b82a-7a2338af0f1f)
 
-![image](https://github.com/user-attachments/assets/e7713178-37e3-4549-8d7e-826eef52a300)
-
-![image](https://github.com/user-attachments/assets/14165992-797a-4b24-b4ac-791cd873ace7)
-
-![image](https://github.com/user-attachments/assets/2594575d-c9a2-4734-9eb3-06901dbbc35a)
 
 #### **Step 2: Create Administrative Users in Active Directory**  
 1. Open **Active Directory Users and Computers (ADUC)**. 
@@ -119,25 +98,7 @@ mydomain.com\labuser
 mydomain.com\jane_admin
 7. Use `jane_admin` as the **admin account** for all further steps.  
 
-![image](https://github.com/user-attachments/assets/8705a23d-b42f-4567-8f80-8036a1e6d219)
 
-![image](https://github.com/user-attachments/assets/4e9134cb-cca3-423e-9564-54434b159c3d)
-
-![image](https://github.com/user-attachments/assets/3fd936d0-e425-4f2b-a8f5-d5fdfd78cd30)
-
-![image](https://github.com/user-attachments/assets/8f8b7490-a192-4c59-8258-dc622df0b45b)
-
-![image](https://github.com/user-attachments/assets/1d3d4740-724c-4871-9977-5157710fc8df)
-
-![image](https://github.com/user-attachments/assets/2fe69c4c-9bc6-4936-923f-9ce0c452f63b)
-
-![image](https://github.com/user-attachments/assets/f2988965-17e3-4095-b44a-9186051efd74)
-
-![image](https://github.com/user-attachments/assets/737b4c24-72f6-453b-856a-965293f52f25)
-
-![image](https://github.com/user-attachments/assets/36bb0fd5-0f0b-421c-a12d-a2b4d113568a)
-
-![image](https://github.com/user-attachments/assets/dfc64d22-7ed7-42e0-af53-8b652e76fb89)
 
 
 #### **Step 3: Join Client-1 to the Domain**  
@@ -149,19 +110,7 @@ mydomain.com\jane_admin
 6. Verify **Client-1 appears in ADUC** on **DC-1**.  
 7. Create an **OU** named **`_CLIENTS`** and move **Client-1** into it.  
 
-![image](https://github.com/user-attachments/assets/844764b4-cf0a-41e3-8dc2-1a5f5a958480)
 
-![image](https://github.com/user-attachments/assets/4c59d815-95ce-4123-8248-a10480b5c747)
-
-![image](https://github.com/user-attachments/assets/a65a9163-34e9-4b73-8ed3-621b1152e95b)
-
-![image](https://github.com/user-attachments/assets/8c0b8bc1-c5d6-4776-ba7f-a5fcdbb1bb4d)
-
-![image](https://github.com/user-attachments/assets/29cffa5a-b7e0-42b4-9697-df59d3791920)
-
-![image](https://github.com/user-attachments/assets/488a4a71-be0d-4072-a36b-317fab9eeb91)
-
-![image](https://github.com/user-attachments/assets/61a8307a-7ce9-4225-808c-ca104130fe45)
 
 ---
 
@@ -173,11 +122,7 @@ mydomain.com\jane_admin
 3. Allow **domain users** to access **Remote Desktop**.  
 4. Test logging into **Client-1** with a non-administrative domain user.  
 
-![image](https://github.com/user-attachments/assets/510d6447-d460-41c5-9380-ca18018c067d)
 
-![image](https://github.com/user-attachments/assets/246e7d0d-ec64-442b-87f5-c6c9ef452059)
-
-![image](https://github.com/user-attachments/assets/6c1d7101-c40d-4285-9bf1-3357d0e84c2a)
 
 #### **Step 2: Automate Bulk User Creation with PowerShell**  
 1. Log into **DC-1** as **jane_admin**.  
@@ -187,15 +132,6 @@ mydomain.com\jane_admin
 5. Open **ADUC** and verify users appear in `_EMPLOYEES`.  
 6. Test logging into **Client-1** using one of the newly created accounts.  
 
-![image](https://github.com/user-attachments/assets/7aba63fd-747f-4d2d-9cdc-7e886c72d811)
-
-![image](https://github.com/user-attachments/assets/f02fdf18-a47b-42cf-993c-2153684e7de1)
-
-![image](https://github.com/user-attachments/assets/9e616044-6a7e-4be5-906e-4e4df5d85b3f)
-
-![image](https://github.com/user-attachments/assets/d50e6eed-ee2e-416f-830d-fb7836491d17)
-
-![image](https://github.com/user-attachments/assets/11005aa2-5a8d-47a6-aaf2-0098c294ff30)
 
 ---
 
