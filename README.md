@@ -99,6 +99,11 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 
 ![image](https://github.com/user-attachments/assets/b9f586b9-4689-42f7-82b3-e23f43730855)
 
+![image](https://github.com/user-attachments/assets/7ddaef2f-5e48-4456-914d-9325f2c150c8)
+
+![image](https://github.com/user-attachments/assets/d1db6914-d444-4be3-9a32-3f184c26a207)
+
+
 
 ---
 
