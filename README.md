@@ -150,32 +150,41 @@ mydomain.com\labuser
 
 #### **Step 2: Create Administrative Users in Active Directory**  
 1. Open **Active Directory Users and Computers (ADUC)**. 
+
+![image](https://github.com/user-attachments/assets/c91060b2-976c-48b4-b58c-5abca30b1f4d)
+
+
 2. Create an **Organizational Unit (OU)** named **`_EMPLOYEES`**.  
-3. Create another **OU** named **`_ADMINS`**.  
+3. Create another **OU** named **`_ADMINS`**.
+
+   
+![image](https://github.com/user-attachments/assets/94f1d142-20b3-4837-a7f3-f0548f7469ec)
+
+![image](https://github.com/user-attachments/assets/15d53e49-3f62-45e8-adc8-31c2f0493a77)
+
+
 4. Create a **new domain user**:  
 - **Name:** Jane Doe  
 - **Username:** `jane_admin`  
 - **Password:** `Cyberlab123!`  
+
+![image](https://github.com/user-attachments/assets/c701f592-fa64-4b1b-9a39-427fee87589c)
+
+![image](https://github.com/user-attachments/assets/96b7e726-1c1b-421b-8681-9622e40e803a)
+
 5. Add `jane_admin` to the **Domain Admins** Security Group.  
+
+![image](https://github.com/user-attachments/assets/39820469-7043-4186-b389-bbf961fe1ef0)
+
+![image](https://github.com/user-attachments/assets/b04606a9-c45c-45a1-b9b7-ff5b25ebf042)
+
+![image](https://github.com/user-attachments/assets/bc111418-8487-45f0-9a8b-6438693b37f0)
+
+
 6. Log out of **DC-1** and log back in as **jane_admin**:  
 mydomain.com\jane_admin
 7. Use `jane_admin` as the **admin account** for all further steps.  
 
-![image](https://github.com/user-attachments/assets/2df64a27-b0d9-4d7a-9048-38825f7936b6)
-
-![image](https://github.com/user-attachments/assets/94f1d142-20b3-4837-a7f3-f0548f7469ec)
-
-![image](https://github.com/user-attachments/assets/52ff97eb-2c20-40bf-ac79-664fbcf851b3)
-
-![image](https://github.com/user-attachments/assets/3e0d7638-058d-4abe-aea4-823d9d9db064)
-
-![image](https://github.com/user-attachments/assets/96b7e726-1c1b-421b-8681-9622e40e803a)
-
-![image](https://github.com/user-attachments/assets/e2bb63d0-b6f3-483d-afa2-e66679b775ad)
-
-![image](https://github.com/user-attachments/assets/641f3d7c-d8a6-419f-bda6-dd3103f4adea)
-
-![image](https://github.com/user-attachments/assets/804095ee-c4c4-404a-9ce6-64b51e3cac48)
 
 
 
