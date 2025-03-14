@@ -221,7 +221,19 @@ mydomain.com\jane_admin
 #### **Step 1: Enable Remote Desktop for Domain Users**  
 1. Log into **Client-1** as **jane_admin**.  
 2. Open **System Properties** and select **Remote Desktop**.  
+
+![image](https://github.com/user-attachments/assets/fb691c42-c0d6-4687-ad96-460e2c1a10e4)
+
+![image](https://github.com/user-attachments/assets/ddddcc7a-99d2-484b-91fb-9c1b6f9242c9)
+
 3. Allow **domain users** to access **Remote Desktop**.  
+
+![image](https://github.com/user-attachments/assets/62f9153f-fce4-4e42-b6b5-0d40c445a91f)
+
+![image](https://github.com/user-attachments/assets/cb043d71-eb87-4b7e-8abc-e115ebb5b27d)
+
+![image](https://github.com/user-attachments/assets/9c6c593c-4b7b-4f17-8283-ad6f20027283)
+
 4. Test logging into **Client-1** with a non-administrative domain user.  
 
 
