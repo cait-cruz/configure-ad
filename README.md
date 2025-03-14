@@ -204,11 +204,14 @@ mydomain.com\jane_admin
 
 ![image](https://github.com/user-attachments/assets/57ed1da0-fb1d-46a0-ac72-d9e0d64bcac9)
 
+![image](https://github.com/user-attachments/assets/b9e2200c-b6d0-4759-9dde-edc978817025)
+
 5. Restart **Client-1**.  
 6. Verify **Client-1 appears in ADUC** on **DC-1**.  
+
+![image](https://github.com/user-attachments/assets/e8060f46-ff9d-4452-a623-2bfd370aa6a4)
+
 7. Create an **OU** named **`_CLIENTS`** and move **Client-1** into it.  
-
-
 
 
 ---
