@@ -204,6 +204,8 @@ mydomain.com\jane_admin
 
 ![image](https://github.com/user-attachments/assets/57ed1da0-fb1d-46a0-ac72-d9e0d64bcac9)
 
+Enter admin information to confirm changes.
+
 ![image](https://github.com/user-attachments/assets/b9e2200c-b6d0-4759-9dde-edc978817025)
 
 5. Restart **Client-1**.  
