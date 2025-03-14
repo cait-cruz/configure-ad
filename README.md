@@ -39,16 +39,16 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 
 #### **Step 1: Create the Domain Controller (DC-1)**  
 1. Create a **Resource Group** in Azure.  
-2. Create a **Virtual Network** and **Subnet**.  
-3. Deploy a **Windows Server 2022 VM** named **DC-1**:  
-   - **Username:** `labuser`  
-   - **Password:** `Cyberlab123!`  
-4. After the VM is created, set **DC-1’s NIC Private IP address** to **static**.  
-5. Log into **DC-1** and disable the **Windows Firewall** *(for testing connectivity)*.  
 
 ![image](https://github.com/user-attachments/assets/93cc2566-a5b9-416b-9a76-4ee392d204d9)
 
+2. Create a **Virtual Network** and **Subnet**.  
+
 ![image](https://github.com/user-attachments/assets/eb567bee-5910-4a77-a501-d6a09aa2f425)
+
+3. Deploy a **Windows Server 2022 VM** named **DC-1**:  
+   - **Username:** `labuser`  
+   - **Password:** `Cyberlab123!`  
 
 ![image](https://github.com/user-attachments/assets/0f3197d0-2f88-49f1-9ba8-f5ba989fb8a5)
 
@@ -58,18 +58,26 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 
 ![image](https://github.com/user-attachments/assets/4ce8c5b5-1662-447d-b015-5809e37ddb81)
 
+4. After the VM is created, set **DC-1’s NIC Private IP address** to **static**.  
+
 ![image](https://github.com/user-attachments/assets/3f4336c9-6653-4d8b-8267-2c9db46cade5)
 
+![image](https://github.com/user-attachments/assets/6b8fd86e-c8e1-4c61-b0ed-48ae315b21bb)
 
-![image](https://github.com/user-attachments/assets/5d481ecb-468a-4da0-aff7-847a3acf46e7)
+![image](https://github.com/user-attachments/assets/67912e7a-8f4b-419a-b341-1f259206fd56)
 
-![image](https://github.com/user-attachments/assets/f820d694-f49e-4915-8f95-bac0d06b6c09)
 
-![image](https://github.com/user-attachments/assets/f9136e63-2b9e-47e3-a361-2d4a636913e2)
+5. Log into **DC-1** and disable the **Windows Firewall** *(for testing connectivity)*.  
 
-![image](https://github.com/user-attachments/assets/d527a961-342b-43d2-b24e-d28f205e8434)
+![image](https://github.com/user-attachments/assets/8be6a1ed-ae3b-45ee-968f-f559665e980b)
 
-![image](https://github.com/user-attachments/assets/367b8424-27e7-4bf8-bdec-f2dab2f80ad9)
+![image](https://github.com/user-attachments/assets/7c50e3a0-d53b-4f48-b67f-65ccdb75bd37)
+
+![image](https://github.com/user-attachments/assets/39139ad8-d1a9-43ea-8adb-3e9a96c42adf)
+
+
+
+
 
 #### **Step 2: Create the Client Machine (Client-1)**  
 1. Deploy a **Windows 10 VM** named **Client-1**:  
