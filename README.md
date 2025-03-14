@@ -116,6 +116,15 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 3. Restart **DC-1** and log in as:  
 mydomain.com\labuser
 
+![image](https://github.com/user-attachments/assets/c1b4ca60-0bfd-4f5f-91dd-9a5926d20fe6)
+
+![image](https://github.com/user-attachments/assets/c7c891ec-3d88-467a-b381-c98cff8cad31)
+
+![image](https://github.com/user-attachments/assets/4408907c-c955-43bc-9af8-fb29441756e5)
+
+![image](https://github.com/user-attachments/assets/fa99d26e-54b8-49c5-84f8-d3bdd7223278)
+
+
 
 
 #### **Step 2: Create Administrative Users in Active Directory**  
