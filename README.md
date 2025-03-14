@@ -145,6 +145,23 @@ mydomain.com\labuser
 mydomain.com\jane_admin
 7. Use `jane_admin` as the **admin account** for all further steps.  
 
+![image](https://github.com/user-attachments/assets/2df64a27-b0d9-4d7a-9048-38825f7936b6)
+
+![image](https://github.com/user-attachments/assets/94f1d142-20b3-4837-a7f3-f0548f7469ec)
+
+![image](https://github.com/user-attachments/assets/52ff97eb-2c20-40bf-ac79-664fbcf851b3)
+
+![image](https://github.com/user-attachments/assets/3e0d7638-058d-4abe-aea4-823d9d9db064)
+
+![image](https://github.com/user-attachments/assets/96b7e726-1c1b-421b-8681-9622e40e803a)
+
+![image](https://github.com/user-attachments/assets/e2bb63d0-b6f3-483d-afa2-e66679b775ad)
+
+![image](https://github.com/user-attachments/assets/641f3d7c-d8a6-419f-bda6-dd3103f4adea)
+
+![image](https://github.com/user-attachments/assets/804095ee-c4c4-404a-9ce6-64b51e3cac48)
+
+
 
 
 
