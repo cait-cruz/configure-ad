@@ -242,8 +242,22 @@ mydomain.com\jane_admin
 1. Log into **DC-1** as **jane_admin**.  
 2. Open **PowerShell_ise** as Administrator.  
 3. Create a new script file and paste the contents of this [**script**](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1).  
+
+![image](https://github.com/user-attachments/assets/880d516f-09ec-4774-a575-29fa44842cf5)
+
+![image](https://github.com/user-attachments/assets/18ec9979-86ec-4e94-9b56-e71853cfd227)
+
 4. Run the script and observe **user accounts being generated**.  
+
+![image](https://github.com/user-attachments/assets/c9030b50-9c7c-499f-a6cf-d2172b776514)
+
+
 5. Open **ADUC** and verify users appear in `_EMPLOYEES`.  
+
+![image](https://github.com/user-attachments/assets/f6f6715e-6f5f-47e3-a786-708a58aaa66e)
+
+
+
 6. Test logging into **Client-1** using one of the newly created accounts.  
 
 
