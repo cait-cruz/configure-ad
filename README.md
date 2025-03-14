@@ -174,6 +174,13 @@ mydomain.com\jane_admin
 6. Verify **Client-1 appears in ADUC** on **DC-1**.  
 7. Create an **OU** named **`_CLIENTS`** and move **Client-1** into it.  
 
+![image](https://github.com/user-attachments/assets/c107d5ad-04d9-4a5d-ae53-c700e72a67c2)
+
+![image](https://github.com/user-attachments/assets/0d6aefa5-a577-40a4-b295-7354f42cdcf2)
+
+![image](https://github.com/user-attachments/assets/a8637199-4097-4ad0-a943-28af7ec2980a)
+
+![image](https://github.com/user-attachments/assets/57ed1da0-fb1d-46a0-ac72-d9e0d64bcac9)
 
 
 ---
