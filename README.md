@@ -195,17 +195,20 @@ mydomain.com\jane_admin
 2. Restart **Client-1**.  
 3. Log into **Client-1** as the local admin (`labuser`).  
 4. Join **Client-1** to the **domain (`mydomain.com`)**.  
+
+![image](https://github.com/user-attachments/assets/a54d23f1-458a-4bd6-af3c-80258527f00b)
+
+![image](https://github.com/user-attachments/assets/05af1a24-b23f-45e7-ae3a-1ccd8c6ac2a5)
+
+![image](https://github.com/user-attachments/assets/10a56f0f-e1c1-4ad7-87b4-8e52e2e50bf0)
+
+![image](https://github.com/user-attachments/assets/57ed1da0-fb1d-46a0-ac72-d9e0d64bcac9)
+
 5. Restart **Client-1**.  
 6. Verify **Client-1 appears in ADUC** on **DC-1**.  
 7. Create an **OU** named **`_CLIENTS`** and move **Client-1** into it.  
 
-![image](https://github.com/user-attachments/assets/c107d5ad-04d9-4a5d-ae53-c700e72a67c2)
 
-![image](https://github.com/user-attachments/assets/0d6aefa5-a577-40a4-b295-7354f42cdcf2)
-
-![image](https://github.com/user-attachments/assets/a8637199-4097-4ad0-a943-28af7ec2980a)
-
-![image](https://github.com/user-attachments/assets/57ed1da0-fb1d-46a0-ac72-d9e0d64bcac9)
 
 
 ---
