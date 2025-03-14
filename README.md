@@ -84,15 +84,6 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
    - **Username:** `labuser`  
    - **Password:** `Cyberlab123!`  
 2. Attach **Client-1** to the same **Virtual Network** as **DC-1**.  
-3. Set **Client-1’s DNS settings** to **DC-1’s Private IP Address**.  
-4. Restart **Client-1** from the Azure Portal.  
-5. Log into **Client-1** and verify connectivity:  
-   - Open **Command Prompt** and run:  
-     ```powershell
-     ping <DC-1 Private IP>
-     ```  
-   - Ensure the ping succeeds.  
-   - Run `ipconfig /all` in PowerShell to confirm **DC-1’s Private IP is set as the DNS server**.  
 
 ![image](https://github.com/user-attachments/assets/fa19312e-add4-457e-af38-17f62710ce27)
 
@@ -102,11 +93,26 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 
 ![image](https://github.com/user-attachments/assets/78a8413d-b363-4f91-9fdd-7192100359e8)
 
-![image](https://github.com/user-attachments/assets/81a8a448-d3fb-44d7-9346-8c4043c6eaa2)
+3. Set **Client-1’s DNS settings** to **DC-1’s Private IP Address**.  
 
-![image](https://github.com/user-attachments/assets/d6f22109-2645-427f-a1be-2a3e78fba827)
+![image](https://github.com/user-attachments/assets/ceabc60e-3327-4668-a4bf-748b7e9b1289)
 
-![image](https://github.com/user-attachments/assets/b9f586b9-4689-42f7-82b3-e23f43730855)
+![image](https://github.com/user-attachments/assets/c42aca92-878f-4ba2-9490-eedd787afae5)
+
+
+4. Restart **Client-1** from the Azure Portal.  
+
+![image](https://github.com/user-attachments/assets/5b9463d1-f5c7-4fc7-a3c3-8516cdcc397f)
+
+
+
+5. Log into **Client-1** and verify connectivity:  
+   - Open **Command Prompt** and run:  
+     ```powershell
+     ping <DC-1 Private IP>
+     ```  
+   - Ensure the ping succeeds.  
+   - Run `ipconfig /all` in PowerShell to confirm **DC-1’s Private IP is set as the DNS server**.  
 
 ![image](https://github.com/user-attachments/assets/7ddaef2f-5e48-4456-914d-9325f2c150c8)
 
@@ -120,22 +126,23 @@ This tutorial outlines the **implementation of on-premises Active Directory** wi
 
 #### **Step 1: Install Active Directory on DC-1**  
 1. Log into **DC-1** and install **Active Directory Domain Services (AD DS)**.  
+
+![image](https://github.com/user-attachments/assets/91edfdfa-f84a-47f3-b7cb-5d510479aba6)
+
+![image](https://github.com/user-attachments/assets/c9ae8085-bfcb-4422-8073-53f09ce5e35d)
+
 2. Promote **DC-1** as a **Domain Controller**, creating a new **forest**:  
    - **Domain Name:** `mydomain.com` *(or any domain name of your choice)*  
+
+![image](https://github.com/user-attachments/assets/a13a3005-383d-4923-a4a6-c87acafa2ece)
+
+![image](https://github.com/user-attachments/assets/b8c2630a-9e75-42b0-9114-0d7c6077070b)
+
+![image](https://github.com/user-attachments/assets/76446469-586b-4144-a2ad-5e746e582d67)
+
+
 3. Restart **DC-1** and log in as:  
 mydomain.com\labuser
-
-![image](https://github.com/user-attachments/assets/c1b4ca60-0bfd-4f5f-91dd-9a5926d20fe6)
-
-![image](https://github.com/user-attachments/assets/c7c891ec-3d88-467a-b381-c98cff8cad31)
-
-![image](https://github.com/user-attachments/assets/4408907c-c955-43bc-9af8-fb29441756e5)
-
-![image](https://github.com/user-attachments/assets/fa99d26e-54b8-49c5-84f8-d3bdd7223278)
-
-![image](https://github.com/user-attachments/assets/8f1b77ab-a812-4f8c-bfd2-881d119abe9a)
-
-![image](https://github.com/user-attachments/assets/86d7edb7-8688-489e-9a32-e17762685bee)
 
 ![image](https://github.com/user-attachments/assets/9dc22556-7b43-4ef5-80f5-a70ad6e1690c)
 
